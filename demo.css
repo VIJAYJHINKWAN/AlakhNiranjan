@@ -1981,8 +1981,34 @@ body.menu-open {
 		display: inline-flex;
 	}
 
+	.cart-btn {
+		position: relative;
+	}
+
+	/* The "Cart (" / ")" text collapses to zero width at font-size: 0,
+	   leaving only the count as a small badge — so tapping Add to Cart
+	   still gives visible feedback once the full label is hidden. */
 	.cart-label {
-		display: none;
+		position: absolute;
+		top: 1px;
+		right: 1px;
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		min-width: 15px;
+		height: 15px;
+		padding: 0 3px;
+		border-radius: 999px;
+		background-color: var(--gold);
+		font-size: 0;
+		line-height: 1;
+		pointer-events: none;
+	}
+
+	.cart-label #cartCount {
+		font-size: 0.625rem;
+		font-weight: 700;
+		color: var(--forest-dark);
 	}
 }
 
