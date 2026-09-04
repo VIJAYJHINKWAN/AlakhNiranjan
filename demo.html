@@ -1,0 +1,1023 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Alakh Niranjan — Design Demo</title>
+	<meta name="description" content="Alakh Niranjan, by Jay Gurudev Agro — a premium cold-pressed oil brand design prototype. Client-facing visual demo only, not connected to any store." />
+	<link rel="stylesheet" href="demo.css" />
+</head>
+<body>
+
+	<!-- ================= ANNOUNCEMENT BAR ================= -->
+	<div class="announce">
+		<p>100% Pure &nbsp;•&nbsp; Carefully Selected Seeds &nbsp;•&nbsp; Made for Everyday Kitchens</p>
+	</div>
+
+	<!-- ================= HEADER ================= -->
+	<header class="site-header">
+		<div class="container header-inner">
+			<a href="#top" class="brand">
+				<span class="brand-mark" aria-hidden="true"></span>
+				<span class="brand-word">ALAKH <span>NIRANJAN</span></span>
+			</a>
+
+			<nav class="main-nav" aria-label="Primary">
+				<ul>
+					<li><a href="#top">Home</a></li>
+					<li><a href="#shop">Shop</a></li>
+					<li><a href="#shop">Our Oils</a></li>
+					<li><a href="#story">Our Story</a></li>
+					<li><a href="#why">Why Alakh Niranjan</a></li>
+					<li><a href="#footer">Contact</a></li>
+				</ul>
+			</nav>
+
+			<div class="header-actions">
+				<button type="button" class="icon-btn" aria-label="Search">
+					<svg class="icon-svg" viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5" /><line x1="15.2" y1="15.2" x2="21" y2="21" /></svg>
+				</button>
+				<button type="button" class="icon-btn" aria-label="Account">
+					<svg class="icon-svg" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="3.6" /><path d="M4.5 20c1.5-4 5-5.5 7.5-5.5s6 1.5 7.5 5.5" /></svg>
+				</button>
+				<button type="button" class="icon-btn cart-btn" aria-label="Cart, 0 items" id="cartButton">
+					<svg class="icon-svg" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 8h12l-1 12H7L6 8z" /><path d="M9 8V6.5a3 3 0 0 1 6 0V8" /></svg>
+					<span class="cart-label">Cart&nbsp;(<span id="cartCount">0</span>)</span>
+				</button>
+				<button type="button" class="menu-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu" id="menuToggle">
+					<span></span><span></span><span></span>
+				</button>
+			</div>
+		</div>
+	</header>
+
+	<!-- Mobile menu panel -->
+	<div class="mobile-menu" id="mobileMenu" hidden>
+		<div class="mobile-menu-panel" role="dialog" aria-modal="true" aria-label="Mobile navigation">
+			<div class="mobile-menu-head">
+				<span class="brand">
+					<span class="brand-mark" aria-hidden="true"></span>
+					<span class="brand-word">ALAKH <span>NIRANJAN</span></span>
+				</span>
+				<button type="button" class="mobile-menu-close" id="menuClose" aria-label="Close menu">
+					<svg viewBox="0 0 24 24" aria-hidden="true"><line x1="5" y1="5" x2="19" y2="19" /><line x1="19" y1="5" x2="5" y2="19" /></svg>
+				</button>
+			</div>
+			<nav aria-label="Mobile">
+				<ul>
+					<li><a href="#top">Home</a></li>
+					<li><a href="#shop">Shop</a></li>
+					<li><a href="#shop">Our Oils</a></li>
+					<li><a href="#story">Our Story</a></li>
+					<li><a href="#why">Why Alakh Niranjan</a></li>
+					<li><a href="#footer">Contact</a></li>
+				</ul>
+			</nav>
+			<div class="mobile-menu-actions">
+				<button type="button" class="icon-btn" aria-label="Search"><svg class="icon-svg" viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5" /><line x1="15.2" y1="15.2" x2="21" y2="21" /></svg></button>
+				<button type="button" class="icon-btn" aria-label="Account"><svg class="icon-svg" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="3.6" /><path d="M4.5 20c1.5-4 5-5.5 7.5-5.5s6 1.5 7.5 5.5" /></svg></button>
+			</div>
+		</div>
+	</div>
+
+	<main id="top">
+
+		<!-- ================= HERO / PRODUCT SHOWCASE ================= -->
+		<section class="hero">
+			<img class="section-decoration hero-decor" src="assets/botanicals/harvest-grass.svg" alt="" aria-hidden="true" />
+
+			<div class="container hero-grid">
+
+				<div class="hero-intro">
+					<p class="eyebrow">From Seed to Kitchen</p>
+					<h1 class="hero-heading">Pure oils.<br />Naturally better.</h1>
+					<p class="hero-text">Thoughtfully sourced seeds, carefully pressed, and made for the everyday meals that bring us together.</p>
+				</div>
+
+				<div class="hero-showcase" id="heroShowcase">
+					<div class="showcase-stage">
+						<div class="showcase-bottle" data-index="0">
+							<img src="assets/product/Groundnut%20Oil.png" alt="Alakh Niranjan Cold Pressed Groundnut Oil bottle" />
+						</div>
+						<div class="showcase-bottle" data-index="1">
+							<img src="assets/product/Mustard%20Oil.png" alt="Alakh Niranjan Cold Pressed Mustard Oil bottle" />
+						</div>
+						<div class="showcase-bottle" data-index="2">
+							<img src="assets/product/Sesame%20Oil.png" alt="Alakh Niranjan Cold Pressed Sesame Oil bottle" />
+						</div>
+					</div>
+
+					<div class="showcase-nav">
+						<button type="button" class="showcase-arrow" id="showcasePrev" aria-label="Previous product">
+							<svg class="icon-svg" viewBox="0 0 24 24" aria-hidden="true"><polyline points="14.5 5 8 12 14.5 19" /></svg>
+						</button>
+						<div class="showcase-tabs" role="tablist" aria-label="Choose a product">
+							<button type="button" class="showcase-tab is-active" data-goto="0" role="tab" aria-selected="true">Groundnut</button>
+							<button type="button" class="showcase-tab" data-goto="1" role="tab" aria-selected="false">Mustard</button>
+							<button type="button" class="showcase-tab" data-goto="2" role="tab" aria-selected="false">Sesame</button>
+						</div>
+						<button type="button" class="showcase-arrow" id="showcaseNext" aria-label="Next product">
+							<svg class="icon-svg" viewBox="0 0 24 24" aria-hidden="true"><polyline points="9.5 5 16 12 9.5 19" /></svg>
+						</button>
+					</div>
+
+					<div class="showcase-info" id="showcaseInfo">
+						<div class="showcase-info-head">
+							<p class="showcase-name" id="showcaseName">Groundnut Oil</p>
+							<p class="showcase-desc" id="showcaseDesc">Cold Pressed Groundnut Oil</p>
+						</div>
+						<div class="showcase-rating" id="showcaseRating" aria-label="Rated 4.5 out of 5"></div>
+						<div class="showcase-meta">
+							<span class="showcase-size" id="showcaseSize">500 ml / 1 Litre</span>
+							<span class="showcase-price" id="showcasePrice">₹499</span>
+						</div>
+						<button type="button" class="btn btn-primary btn-block add-to-cart" id="showcaseAdd">Add to Cart</button>
+					</div>
+				</div>
+
+				<div class="hero-closing">
+					<div class="hero-actions">
+						<a href="#shop" class="btn btn-primary">Shop Now <span aria-hidden="true">→</span></a>
+						<a href="#story" class="btn btn-outline">Our Story</a>
+					</div>
+					<ul class="hero-tags">
+						<li>Cold Pressed</li>
+						<li>Quality First</li>
+						<li>1 Litre</li>
+					</ul>
+				</div>
+
+			</div>
+
+			<div class="container hero-trust">
+				<div class="hero-trust-item">
+					<span class="trust-num">01</span>
+					<p>Carefully Sourced</p>
+				</div>
+				<div class="hero-trust-item">
+					<span class="trust-num">02</span>
+					<p>Cold Pressed</p>
+				</div>
+				<div class="hero-trust-item">
+					<span class="trust-num">03</span>
+					<p>Quality Checked</p>
+				</div>
+				<div class="hero-trust-item">
+					<span class="trust-num">04</span>
+					<p>Made for Indian Kitchens</p>
+				</div>
+			</div>
+		</section>
+
+		<!-- ================= SHOP BY OIL ================= -->
+		<section class="oils" id="shop">
+			<img class="section-decoration oils-decor" src="assets/botanicals/groundnut-leaves.svg" alt="" aria-hidden="true" />
+
+			<div class="container">
+				<div class="section-head">
+					<p class="eyebrow">Shop</p>
+					<h2>Choose your everyday oil.</h2>
+					<p>Simple ingredients. Thoughtful processing. Made for the way you cook.</p>
+				</div>
+
+				<div class="product-grid">
+
+					<article class="product-card">
+						<div class="product-visual gallery" data-gallery>
+							<div class="gallery-slide is-active">
+								<img class="product-photo" src="assets/product/Groundnut%20Oil.png" alt="Alakh Niranjan Groundnut Oil bottle" />
+							</div>
+							<div class="gallery-slide">
+								<span class="gallery-plate"><img src="assets/botanicals/groundnut-leaves.svg" alt="Groundnut plant illustration" /></span>
+							</div>
+							<button type="button" class="gallery-arrow gallery-arrow--prev" aria-label="Previous image">
+								<svg class="icon-svg" viewBox="0 0 24 24" aria-hidden="true"><polyline points="14.5 5 8 12 14.5 19" /></svg>
+							</button>
+							<button type="button" class="gallery-arrow gallery-arrow--next" aria-label="Next image">
+								<svg class="icon-svg" viewBox="0 0 24 24" aria-hidden="true"><polyline points="9.5 5 16 12 9.5 19" /></svg>
+							</button>
+							<div class="gallery-dots">
+								<button type="button" class="gallery-dot is-active" data-slide="0" aria-label="Show bottle image"></button>
+								<button type="button" class="gallery-dot" data-slide="1" aria-label="Show ingredient image"></button>
+							</div>
+						</div>
+						<h3>Groundnut Oil</h3>
+						<p class="product-type">Cold Pressed</p>
+						<p class="product-desc">Rich and nutty, perfect for everyday tempering and frying.</p>
+						<div class="product-rating" aria-label="Rated 4.5 out of 5">
+							<svg class="star-svg" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6.2 6.8.7-5.1 4.6 1.5 6.7L12 17.6l-6.1 3.1 1.5-6.7-5.1-4.6 6.8-.7L12 2.5z" /></svg>
+							<svg class="star-svg" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6.2 6.8.7-5.1 4.6 1.5 6.7L12 17.6l-6.1 3.1 1.5-6.7-5.1-4.6 6.8-.7L12 2.5z" /></svg>
+							<svg class="star-svg" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6.2 6.8.7-5.1 4.6 1.5 6.7L12 17.6l-6.1 3.1 1.5-6.7-5.1-4.6 6.8-.7L12 2.5z" /></svg>
+							<svg class="star-svg" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6.2 6.8.7-5.1 4.6 1.5 6.7L12 17.6l-6.1 3.1 1.5-6.7-5.1-4.6 6.8-.7L12 2.5z" /></svg>
+							<svg class="star-svg star-svg--half" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6.2 6.8.7-5.1 4.6 1.5 6.7L12 17.6l-6.1 3.1 1.5-6.7-5.1-4.6 6.8-.7L12 2.5z" /></svg>
+							<span>(128)</span>
+						</div>
+						<div class="product-meta">
+							<span class="product-size">500 ml</span>
+							<span class="product-price">₹499</span>
+						</div>
+						<div class="product-actions">
+							<button type="button" class="btn btn-primary btn-block add-to-cart">Add to Cart</button>
+							<a href="#shop" class="link-quiet">View Details</a>
+						</div>
+					</article>
+
+					<article class="product-card">
+						<div class="product-visual gallery" data-gallery>
+							<div class="gallery-slide is-active">
+								<img class="product-photo" src="assets/product/Mustard%20Oil.png" alt="Alakh Niranjan Mustard Oil bottle" />
+							</div>
+							<div class="gallery-slide">
+								<span class="gallery-plate"><img src="assets/botanicals/mustard-flower-branch.svg" alt="Mustard flower illustration" /></span>
+							</div>
+							<button type="button" class="gallery-arrow gallery-arrow--prev" aria-label="Previous image">
+								<svg class="icon-svg" viewBox="0 0 24 24" aria-hidden="true"><polyline points="14.5 5 8 12 14.5 19" /></svg>
+							</button>
+							<button type="button" class="gallery-arrow gallery-arrow--next" aria-label="Next image">
+								<svg class="icon-svg" viewBox="0 0 24 24" aria-hidden="true"><polyline points="9.5 5 16 12 9.5 19" /></svg>
+							</button>
+							<div class="gallery-dots">
+								<button type="button" class="gallery-dot is-active" data-slide="0" aria-label="Show bottle image"></button>
+								<button type="button" class="gallery-dot" data-slide="1" aria-label="Show ingredient image"></button>
+							</div>
+						</div>
+						<h3>Mustard Oil</h3>
+						<p class="product-type">Cold Pressed</p>
+						<p class="product-desc">Bold and pungent, the everyday base for classic Indian cooking.</p>
+						<div class="product-rating" aria-label="Rated 5 out of 5">
+							<svg class="star-svg" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6.2 6.8.7-5.1 4.6 1.5 6.7L12 17.6l-6.1 3.1 1.5-6.7-5.1-4.6 6.8-.7L12 2.5z" /></svg>
+							<svg class="star-svg" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6.2 6.8.7-5.1 4.6 1.5 6.7L12 17.6l-6.1 3.1 1.5-6.7-5.1-4.6 6.8-.7L12 2.5z" /></svg>
+							<svg class="star-svg" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6.2 6.8.7-5.1 4.6 1.5 6.7L12 17.6l-6.1 3.1 1.5-6.7-5.1-4.6 6.8-.7L12 2.5z" /></svg>
+							<svg class="star-svg" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6.2 6.8.7-5.1 4.6 1.5 6.7L12 17.6l-6.1 3.1 1.5-6.7-5.1-4.6 6.8-.7L12 2.5z" /></svg>
+							<svg class="star-svg" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6.2 6.8.7-5.1 4.6 1.5 6.7L12 17.6l-6.1 3.1 1.5-6.7-5.1-4.6 6.8-.7L12 2.5z" /></svg>
+							<span>(204)</span>
+						</div>
+						<div class="product-meta">
+							<span class="product-size">500 ml</span>
+							<span class="product-price">₹449</span>
+						</div>
+						<div class="product-actions">
+							<button type="button" class="btn btn-primary btn-block add-to-cart">Add to Cart</button>
+							<a href="#shop" class="link-quiet">View Details</a>
+						</div>
+					</article>
+
+					<article class="product-card">
+						<div class="product-visual gallery" data-gallery>
+							<div class="gallery-slide is-active">
+								<img class="product-photo" src="assets/product/Sesame%20Oil.png" alt="Alakh Niranjan Sesame Oil bottle" />
+							</div>
+							<div class="gallery-slide">
+								<span class="gallery-plate"><img src="assets/botanicals/sesame-flowering-stem.svg" alt="Sesame plant illustration" /></span>
+							</div>
+							<button type="button" class="gallery-arrow gallery-arrow--prev" aria-label="Previous image">
+								<svg class="icon-svg" viewBox="0 0 24 24" aria-hidden="true"><polyline points="14.5 5 8 12 14.5 19" /></svg>
+							</button>
+							<button type="button" class="gallery-arrow gallery-arrow--next" aria-label="Next image">
+								<svg class="icon-svg" viewBox="0 0 24 24" aria-hidden="true"><polyline points="9.5 5 16 12 9.5 19" /></svg>
+							</button>
+							<div class="gallery-dots">
+								<button type="button" class="gallery-dot is-active" data-slide="0" aria-label="Show bottle image"></button>
+								<button type="button" class="gallery-dot" data-slide="1" aria-label="Show ingredient image"></button>
+							</div>
+						</div>
+						<h3>Sesame Oil</h3>
+						<p class="product-type">Cold Pressed</p>
+						<p class="product-desc">Warm and aromatic, a finishing touch for everyday meals.</p>
+						<div class="product-rating" aria-label="Rated 4.5 out of 5">
+							<svg class="star-svg" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6.2 6.8.7-5.1 4.6 1.5 6.7L12 17.6l-6.1 3.1 1.5-6.7-5.1-4.6 6.8-.7L12 2.5z" /></svg>
+							<svg class="star-svg" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6.2 6.8.7-5.1 4.6 1.5 6.7L12 17.6l-6.1 3.1 1.5-6.7-5.1-4.6 6.8-.7L12 2.5z" /></svg>
+							<svg class="star-svg" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6.2 6.8.7-5.1 4.6 1.5 6.7L12 17.6l-6.1 3.1 1.5-6.7-5.1-4.6 6.8-.7L12 2.5z" /></svg>
+							<svg class="star-svg" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6.2 6.8.7-5.1 4.6 1.5 6.7L12 17.6l-6.1 3.1 1.5-6.7-5.1-4.6 6.8-.7L12 2.5z" /></svg>
+							<svg class="star-svg star-svg--half" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6.2 6.8.7-5.1 4.6 1.5 6.7L12 17.6l-6.1 3.1 1.5-6.7-5.1-4.6 6.8-.7L12 2.5z" /></svg>
+							<span>(96)</span>
+						</div>
+						<div class="product-meta">
+							<span class="product-size">500 ml</span>
+							<span class="product-price">₹529</span>
+						</div>
+						<div class="product-actions">
+							<button type="button" class="btn btn-primary btn-block add-to-cart">Add to Cart</button>
+							<a href="#shop" class="link-quiet">View Details</a>
+						</div>
+					</article>
+
+					<article class="product-card">
+						<div class="product-visual gallery" data-gallery>
+							<div class="gallery-slide is-active">
+								<img class="product-photo" src="assets/product/Sunflower%20Oil.png" alt="Alakh Niranjan Sunflower Oil bottle" />
+							</div>
+							<div class="gallery-slide">
+								<span class="gallery-plate"><img src="assets/botanicals/sunflower-stem.svg" alt="Sunflower plant illustration" /></span>
+							</div>
+							<button type="button" class="gallery-arrow gallery-arrow--prev" aria-label="Previous image">
+								<svg class="icon-svg" viewBox="0 0 24 24" aria-hidden="true"><polyline points="14.5 5 8 12 14.5 19" /></svg>
+							</button>
+							<button type="button" class="gallery-arrow gallery-arrow--next" aria-label="Next image">
+								<svg class="icon-svg" viewBox="0 0 24 24" aria-hidden="true"><polyline points="9.5 5 16 12 9.5 19" /></svg>
+							</button>
+							<div class="gallery-dots">
+								<button type="button" class="gallery-dot is-active" data-slide="0" aria-label="Show bottle image"></button>
+								<button type="button" class="gallery-dot" data-slide="1" aria-label="Show ingredient image"></button>
+							</div>
+						</div>
+						<h3>Sunflower Oil</h3>
+						<p class="product-type">Refined</p>
+						<p class="product-desc">Light and versatile, an everyday oil for every kitchen.</p>
+						<div class="product-rating" aria-label="Rated 4 out of 5">
+							<svg class="star-svg" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6.2 6.8.7-5.1 4.6 1.5 6.7L12 17.6l-6.1 3.1 1.5-6.7-5.1-4.6 6.8-.7L12 2.5z" /></svg>
+							<svg class="star-svg" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6.2 6.8.7-5.1 4.6 1.5 6.7L12 17.6l-6.1 3.1 1.5-6.7-5.1-4.6 6.8-.7L12 2.5z" /></svg>
+							<svg class="star-svg" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6.2 6.8.7-5.1 4.6 1.5 6.7L12 17.6l-6.1 3.1 1.5-6.7-5.1-4.6 6.8-.7L12 2.5z" /></svg>
+							<svg class="star-svg" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6.2 6.8.7-5.1 4.6 1.5 6.7L12 17.6l-6.1 3.1 1.5-6.7-5.1-4.6 6.8-.7L12 2.5z" /></svg>
+							<svg class="star-svg star-svg--muted" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6.2 6.8.7-5.1 4.6 1.5 6.7L12 17.6l-6.1 3.1 1.5-6.7-5.1-4.6 6.8-.7L12 2.5z" /></svg>
+							<span>(61)</span>
+						</div>
+						<div class="product-meta">
+							<span class="product-size">500 ml</span>
+							<span class="product-price">₹399</span>
+						</div>
+						<div class="product-actions">
+							<button type="button" class="btn btn-primary btn-block add-to-cart">Add to Cart</button>
+							<a href="#shop" class="link-quiet">View Details</a>
+						</div>
+					</article>
+
+				</div>
+			</div>
+		</section>
+
+		<!-- ================= EDITORIAL BRAND STORY ================= -->
+		<section class="story" id="story">
+			<img class="section-decoration story-decor" src="assets/botanicals/sesame-flowering-stem.svg" alt="" aria-hidden="true" />
+
+			<img class="section-decoration story-texture" src="assets/botanicals/seed-scatter.svg" alt="" aria-hidden="true" />
+
+			<div class="container story-grid">
+				<div class="story-art">
+					<img class="story-photo" src="assets/story.png" alt="Raw peanuts, mustard and sesame seeds beside a bottle of freshly pressed oil and a traditional wooden ghani, on a sunlit wooden table" />
+				</div>
+				<div class="story-copy">
+					<p class="eyebrow">Our Story</p>
+					<h2 class="story-heading">Good oil begins long before the bottle.</h2>
+					<p class="story-text">At Alakh Niranjan, we start with carefully selected seeds and a simple belief — everyday food deserves better ingredients.</p>
+					<a href="#why" class="link-arrow">Discover Our Story <span aria-hidden="true">→</span></a>
+				</div>
+			</div>
+		</section>
+
+		<!-- ================= FROM SEED TO BOTTLE ================= -->
+		<section class="process">
+			<img class="section-decoration process-decor" src="assets/botanicals/harvest-grass.svg" alt="" aria-hidden="true" />
+
+			<div class="container">
+				<div class="section-head section-head--center">
+					<p class="eyebrow">Our Process</p>
+					<h2>From seed to bottle.</h2>
+				</div>
+				<ol class="process-steps">
+					<li class="process-step">
+						<span class="process-num"><svg class="icon-svg" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8" /><circle cx="12" cy="12" r="3" /></svg></span>
+						<p class="process-tag">01 — Select</p>
+						<h3>Carefully chosen seeds.</h3>
+					</li>
+					<li class="process-step">
+						<span class="process-num"><svg class="icon-svg" viewBox="0 0 24 24" aria-hidden="true"><line x1="4" y1="7" x2="20" y2="7" /><line x1="12" y1="7" x2="12" y2="19" /><line x1="7" y1="19" x2="17" y2="19" /></svg></span>
+						<p class="process-tag">02 — Press</p>
+						<h3>Thoughtful cold pressing.</h3>
+					</li>
+					<li class="process-step">
+						<span class="process-num"><svg class="icon-svg" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8" /><path d="M8.5 12.5l2.5 2.5 4.5-5" /></svg></span>
+						<p class="process-tag">03 — Check</p>
+						<h3>Quality at every step.</h3>
+					</li>
+					<li class="process-step">
+						<span class="process-num"><svg class="icon-svg" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 8l9-4 9 4-9 4-9-4z" /><path d="M3 8v8l9 4 9-4V8" /><path d="M12 12v8" /></svg></span>
+						<p class="process-tag">04 — Deliver</p>
+						<h3>Packed for your kitchen.</h3>
+					</li>
+				</ol>
+			</div>
+		</section>
+
+		<!-- ================= WHY ALAKH NIRANJAN ================= -->
+		<section class="why" id="why">
+			<img class="section-decoration why-decor" src="assets/botanicals/groundnut-leaves.svg" alt="" aria-hidden="true" />
+
+			<svg viewBox="0 0 300 340" class="why-texture" aria-hidden="true">
+				<path class="why-stem" d="M150 250 C150 205 150 175 150 150" />
+				<path class="why-leaf" d="M150 210 C120 205 100 185 96 155 C130 158 148 178 150 210Z" />
+				<path class="why-leaf" d="M150 190 C180 184 198 164 202 136 C170 140 152 158 150 190Z" />
+				<path class="why-leaf" d="M150 170 C126 162 112 140 110 112 C138 116 152 136 150 170Z" />
+				<circle class="why-seed" cx="150" cy="256" r="7" />
+				<circle class="why-dot" cx="150" cy="256" r="2.5" />
+				<g class="why-sparks">
+					<circle cx="90" cy="90" r="2.6" /><circle cx="212" cy="100" r="2.2" /><circle cx="222" cy="230" r="2.6" /><circle cx="82" cy="238" r="2.2" />
+				</g>
+			</svg>
+
+			<div class="container why-grid-outer">
+				<div class="why-col">
+					<div class="section-head">
+						<p class="eyebrow">Why Alakh Niranjan</p>
+						<h2>Why families choose<br />Alakh Niranjan.</h2>
+					</div>
+					<div class="why-grid">
+						<div class="why-item">
+							<svg class="why-icon icon-svg" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3c4 3 7 7 7 11a7 7 0 1 1-14 0c0-4 3-8 7-11z" /></svg>
+							<h3>Pure Ingredients</h3>
+							<p>Nothing unnecessary.</p>
+						</div>
+						<div class="why-item">
+							<svg class="why-icon icon-svg" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20c8 0 14-6 14-16-10 0-16 6-14 16z" /><path d="M6 18c4-4 8-8 12-12" /></svg>
+							<h3>Carefully Sourced</h3>
+							<p>Quality begins at the source.</p>
+						</div>
+						<div class="why-item">
+							<svg class="why-icon icon-svg" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 10h16l-1.2 8H5.2L4 10z" /><path d="M2 10h20" /><path d="M9 10V7a3 3 0 0 1 6 0v3" /></svg>
+							<h3>Everyday Quality</h3>
+							<p>Made for everyday cooking.</p>
+						</div>
+						<div class="why-item">
+							<svg class="why-icon icon-svg" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l7 3v6c0 5-3.5 7.5-7 9-3.5-1.5-7-4-7-9V6l7-3z" /><path d="M9 12l2 2 4-4" /></svg>
+							<h3>Trusted Process</h3>
+							<p>Thoughtful from seed to bottle.</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="why-art">
+					<img class="why-photo" src="assets/why.png" alt="Golden cold-pressed oil being poured into a glass bottle, with raw peanuts and mustard seeds beside it" />
+					<p class="why-art-label" aria-hidden="true">Rooted in&nbsp;quality</p>
+				</div>
+			</div>
+		</section>
+
+		<!-- ================= INDIAN KITCHEN MOMENT ================= -->
+		<section class="kitchen">
+			<img class="section-decoration kitchen-decor kitchen-decor--primary" src="assets/botanicals/sesame-flowering-stem.svg" alt="" aria-hidden="true" />
+
+			<svg viewBox="0 0 260 260" class="section-decoration kitchen-texture" aria-hidden="true">
+				<path class="kitchen-vessel" d="M78 120h104l-10 66a10 10 0 0 1-10 8H98a10 10 0 0 1-10-8z" />
+				<path class="kitchen-vessel" d="M70 120h120" />
+				<path class="kitchen-steam" d="M110 108c0-10 8-10 8-20s-8-10-8-20" />
+				<path class="kitchen-steam" d="M150 108c0-10 8-10 8-20s-8-10-8-20" />
+				<circle class="kitchen-seed" cx="60" cy="70" r="3" />
+				<circle class="kitchen-seed" cx="200" cy="70" r="3" />
+				<circle class="kitchen-seed" cx="50" cy="190" r="3" />
+				<circle class="kitchen-seed" cx="210" cy="190" r="3" />
+			</svg>
+
+			<div class="warli-border" aria-hidden="true">
+				<svg viewBox="0 0 200 36" preserveAspectRatio="xMidYMid meet" class="warli-strip">
+					<g class="warli-figure">
+						<circle cx="10" cy="8" r="2.6" /><path d="M10 10.6v6" /><path d="M10 12.6l-5 4.5M10 12.6l5 4.5" /><path d="M5.5 20l4.5 1.6L14.5 20" /><path d="M10 22v6" /><path d="M10 24.6l-4.5 5M10 24.6l4.5 5" />
+					</g>
+					<g class="warli-figure" transform="translate(40 0)">
+						<circle cx="10" cy="8" r="2.6" /><path d="M10 10.6v6" /><path d="M10 12.6l-5 4.5M10 12.6l5 4.5" /><path d="M5.5 20l4.5 1.6L14.5 20" /><path d="M10 22v6" /><path d="M10 24.6l-4.5 5M10 24.6l4.5 5" />
+					</g>
+					<g class="warli-figure" transform="translate(80 0)">
+						<circle cx="10" cy="8" r="2.6" /><path d="M10 10.6v6" /><path d="M10 12.6l-5 4.5M10 12.6l5 4.5" /><path d="M5.5 20l4.5 1.6L14.5 20" /><path d="M10 22v6" /><path d="M10 24.6l-4.5 5M10 24.6l4.5 5" />
+					</g>
+					<g class="warli-figure" transform="translate(120 0)">
+						<circle cx="10" cy="8" r="2.6" /><path d="M10 10.6v6" /><path d="M10 12.6l-5 4.5M10 12.6l5 4.5" /><path d="M5.5 20l4.5 1.6L14.5 20" /><path d="M10 22v6" /><path d="M10 24.6l-4.5 5M10 24.6l4.5 5" />
+					</g>
+					<g class="warli-figure" transform="translate(160 0)">
+						<circle cx="10" cy="8" r="2.6" /><path d="M10 10.6v6" /><path d="M10 12.6l-5 4.5M10 12.6l5 4.5" /><path d="M5.5 20l4.5 1.6L14.5 20" /><path d="M10 22v6" /><path d="M10 24.6l-4.5 5M10 24.6l4.5 5" />
+					</g>
+				</svg>
+			</div>
+
+			<div class="container kitchen-grid">
+				<div class="kitchen-copy">
+					<p class="eyebrow">Every Indian Kitchen</p>
+					<h2>Made for the meals<br />that bring us home.</h2>
+					<p class="kitchen-text">From everyday tadka to weekend family meals, Alakh Niranjan is made to belong in Indian kitchens.</p>
+				</div>
+				<div class="kitchen-art">
+					<img class="kitchen-photo" src="assets/homekitchen.png" alt="Mustard oil tempering with curry leaves and dried red chilies in a hot kadhai on the stove" />
+				</div>
+			</div>
+
+			<div class="warli-border" aria-hidden="true">
+				<svg viewBox="0 0 200 36" preserveAspectRatio="xMidYMid meet" class="warli-strip">
+					<g class="warli-figure">
+						<circle cx="10" cy="8" r="2.6" /><path d="M10 10.6v6" /><path d="M10 12.6l-5 4.5M10 12.6l5 4.5" /><path d="M5.5 20l4.5 1.6L14.5 20" /><path d="M10 22v6" /><path d="M10 24.6l-4.5 5M10 24.6l4.5 5" />
+					</g>
+					<g class="warli-figure" transform="translate(40 0)">
+						<circle cx="10" cy="8" r="2.6" /><path d="M10 10.6v6" /><path d="M10 12.6l-5 4.5M10 12.6l5 4.5" /><path d="M5.5 20l4.5 1.6L14.5 20" /><path d="M10 22v6" /><path d="M10 24.6l-4.5 5M10 24.6l4.5 5" />
+					</g>
+					<g class="warli-figure" transform="translate(80 0)">
+						<circle cx="10" cy="8" r="2.6" /><path d="M10 10.6v6" /><path d="M10 12.6l-5 4.5M10 12.6l5 4.5" /><path d="M5.5 20l4.5 1.6L14.5 20" /><path d="M10 22v6" /><path d="M10 24.6l-4.5 5M10 24.6l4.5 5" />
+					</g>
+					<g class="warli-figure" transform="translate(120 0)">
+						<circle cx="10" cy="8" r="2.6" /><path d="M10 10.6v6" /><path d="M10 12.6l-5 4.5M10 12.6l5 4.5" /><path d="M5.5 20l4.5 1.6L14.5 20" /><path d="M10 22v6" /><path d="M10 24.6l-4.5 5M10 24.6l4.5 5" />
+					</g>
+					<g class="warli-figure" transform="translate(160 0)">
+						<circle cx="10" cy="8" r="2.6" /><path d="M10 10.6v6" /><path d="M10 12.6l-5 4.5M10 12.6l5 4.5" /><path d="M5.5 20l4.5 1.6L14.5 20" /><path d="M10 22v6" /><path d="M10 24.6l-4.5 5M10 24.6l4.5 5" />
+					</g>
+				</svg>
+			</div>
+		</section>
+
+		<!-- ================= FEATURED COLLECTION ================= -->
+		<section class="featured">
+			<img class="section-decoration featured-decor" src="assets/botanicals/seed-scatter.svg" alt="" aria-hidden="true" />
+
+			<div class="container">
+				<div class="section-head">
+					<p class="eyebrow">Featured</p>
+					<h2>Stock your kitchen.</h2>
+				</div>
+				<div class="featured-grid">
+					<article class="featured-card">
+						<p class="featured-badge">Bestseller</p>
+						<div class="product-visual product-visual--lg gallery" data-gallery>
+							<div class="gallery-slide is-active">
+								<img class="product-photo" src="assets/product/Groundnut%20Oil.png" alt="Alakh Niranjan Groundnut Oil bottle" />
+							</div>
+							<div class="gallery-slide">
+								<span class="gallery-plate"><img src="assets/botanicals/groundnut-leaves.svg" alt="Groundnut plant illustration" /></span>
+							</div>
+							<button type="button" class="gallery-arrow gallery-arrow--prev" aria-label="Previous image">
+								<svg class="icon-svg" viewBox="0 0 24 24" aria-hidden="true"><polyline points="14.5 5 8 12 14.5 19" /></svg>
+							</button>
+							<button type="button" class="gallery-arrow gallery-arrow--next" aria-label="Next image">
+								<svg class="icon-svg" viewBox="0 0 24 24" aria-hidden="true"><polyline points="9.5 5 16 12 9.5 19" /></svg>
+							</button>
+							<div class="gallery-dots">
+								<button type="button" class="gallery-dot is-active" data-slide="0" aria-label="Show bottle image"></button>
+								<button type="button" class="gallery-dot" data-slide="1" aria-label="Show ingredient image"></button>
+							</div>
+						</div>
+						<h3>Groundnut Oil</h3>
+						<p class="featured-price">₹499</p>
+						<div class="product-actions">
+							<button type="button" class="btn btn-primary btn-block add-to-cart">Add to Cart</button>
+							<a href="#shop" class="link-quiet">View Product</a>
+						</div>
+					</article>
+
+					<article class="featured-card">
+						<p class="featured-badge">Popular</p>
+						<div class="product-visual product-visual--lg gallery" data-gallery>
+							<div class="gallery-slide is-active">
+								<img class="product-photo" src="assets/product/Mustard%20Oil.png" alt="Alakh Niranjan Mustard Oil bottle" />
+							</div>
+							<div class="gallery-slide">
+								<span class="gallery-plate"><img src="assets/botanicals/mustard-flower-branch.svg" alt="Mustard flower illustration" /></span>
+							</div>
+							<button type="button" class="gallery-arrow gallery-arrow--prev" aria-label="Previous image">
+								<svg class="icon-svg" viewBox="0 0 24 24" aria-hidden="true"><polyline points="14.5 5 8 12 14.5 19" /></svg>
+							</button>
+							<button type="button" class="gallery-arrow gallery-arrow--next" aria-label="Next image">
+								<svg class="icon-svg" viewBox="0 0 24 24" aria-hidden="true"><polyline points="9.5 5 16 12 9.5 19" /></svg>
+							</button>
+							<div class="gallery-dots">
+								<button type="button" class="gallery-dot is-active" data-slide="0" aria-label="Show bottle image"></button>
+								<button type="button" class="gallery-dot" data-slide="1" aria-label="Show ingredient image"></button>
+							</div>
+						</div>
+						<h3>Mustard Oil</h3>
+						<p class="featured-price">₹449</p>
+						<div class="product-actions">
+							<button type="button" class="btn btn-primary btn-block add-to-cart">Add to Cart</button>
+							<a href="#shop" class="link-quiet">View Product</a>
+						</div>
+					</article>
+
+					<article class="featured-card">
+						<p class="featured-badge">Everyday Favourite</p>
+						<div class="product-visual product-visual--lg gallery" data-gallery>
+							<div class="gallery-slide is-active">
+								<img class="product-photo" src="assets/product/Sesame%20Oil.png" alt="Alakh Niranjan Sesame Oil bottle" />
+							</div>
+							<div class="gallery-slide">
+								<span class="gallery-plate"><img src="assets/botanicals/sesame-flowering-stem.svg" alt="Sesame plant illustration" /></span>
+							</div>
+							<button type="button" class="gallery-arrow gallery-arrow--prev" aria-label="Previous image">
+								<svg class="icon-svg" viewBox="0 0 24 24" aria-hidden="true"><polyline points="14.5 5 8 12 14.5 19" /></svg>
+							</button>
+							<button type="button" class="gallery-arrow gallery-arrow--next" aria-label="Next image">
+								<svg class="icon-svg" viewBox="0 0 24 24" aria-hidden="true"><polyline points="9.5 5 16 12 9.5 19" /></svg>
+							</button>
+							<div class="gallery-dots">
+								<button type="button" class="gallery-dot is-active" data-slide="0" aria-label="Show bottle image"></button>
+								<button type="button" class="gallery-dot" data-slide="1" aria-label="Show ingredient image"></button>
+							</div>
+						</div>
+						<h3>Sesame Oil</h3>
+						<p class="featured-price">₹529</p>
+						<div class="product-actions">
+							<button type="button" class="btn btn-primary btn-block add-to-cart">Add to Cart</button>
+							<a href="#shop" class="link-quiet">View Product</a>
+						</div>
+					</article>
+				</div>
+			</div>
+		</section>
+
+		<!-- ================= COMBO / VALUE OFFER ================= -->
+		<section class="combo">
+			<img class="section-decoration combo-decor" src="assets/botanicals/harvest-grass.svg" alt="" aria-hidden="true" />
+
+			<div class="container combo-inner">
+				<div class="combo-copy">
+					<p class="eyebrow">Value Pack</p>
+					<h2>Your everyday trio.</h2>
+					<p class="combo-desc">Groundnut + Mustard + Sesame — three essentials, one thoughtful collection.</p>
+					<div class="combo-price-row">
+						<span class="combo-price">₹1,399</span>
+						<span class="combo-price-note">for all three, 500&nbsp;ml each</span>
+					</div>
+					<a href="#shop" class="btn btn-primary">Shop the Combo <span aria-hidden="true">→</span></a>
+				</div>
+				<div class="combo-art" aria-hidden="true">
+					<div class="combo-bottle">
+						<img src="assets/product/Mustard%20Oil.png" alt="" />
+					</div>
+					<div class="combo-bottle combo-bottle--center">
+						<img src="assets/product/Groundnut%20Oil.png" alt="" />
+					</div>
+					<div class="combo-bottle">
+						<img src="assets/product/Sesame%20Oil.png" alt="" />
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- ================= CUSTOMER TRUST ================= -->
+		<section class="testimonials">
+			<div class="container">
+				<div class="section-head section-head--center">
+					<p class="eyebrow">From Our Customers</p>
+					<h2>Good food deserves good oil.</h2>
+				</div>
+				<div class="testimonial-grid">
+					<figure class="testimonial-card">
+						<blockquote>“Clean, simple and perfect for our everyday cooking.”</blockquote>
+						<figcaption>— Priya M.</figcaption>
+					</figure>
+					<figure class="testimonial-card">
+						<blockquote>“Love the quality and the packaging feels premium.”</blockquote>
+						<figcaption>— Amit R.</figcaption>
+					</figure>
+					<figure class="testimonial-card">
+						<blockquote>“Mustard oil has become a regular in our kitchen.”</blockquote>
+						<figcaption>— Sneha K.</figcaption>
+					</figure>
+				</div>
+			</div>
+		</section>
+
+		<!-- ================= FINAL CTA ================= -->
+		<section class="cta">
+			<img class="section-decoration cta-decor cta-decor--branch" src="assets/botanicals/mustard-flower-branch.svg" alt="" aria-hidden="true" />
+			<img class="section-decoration cta-decor cta-decor--seed" src="assets/botanicals/seed-scatter.svg" alt="" aria-hidden="true" />
+
+			<svg class="cta-art" viewBox="0 0 400 60" aria-hidden="true" preserveAspectRatio="none">
+				<path d="M0 40 C 80 10, 160 60, 240 30 S 360 10, 400 35" />
+				<circle cx="60" cy="26" r="2.4" /><circle cx="150" cy="46" r="2.4" /><circle cx="260" cy="24" r="2.4" /><circle cx="340" cy="38" r="2.4" />
+			</svg>
+			<div class="container cta-grid">
+				<div class="cta-copy">
+					<h2>Bring better oil<br />to your everyday cooking.</h2>
+					<p>Discover the Alakh Niranjan collection.</p>
+					<a href="#shop" class="btn btn-cta">Shop All Oils <span aria-hidden="true">→</span></a>
+				</div>
+				<div class="cta-art-bottle" aria-hidden="true">
+					<div class="cta-bottle cta-bottle--sunflower">
+						<img src="assets/product/Sunflower%20Oil.png" alt="" />
+					</div>
+					<div class="cta-bottle cta-bottle--mustard">
+						<img src="assets/product/Mustard%20Oil.png" alt="" />
+					</div>
+					<div class="cta-bottle cta-bottle--groundnut">
+						<img src="assets/product/Groundnut%20Oil.png" alt="" />
+					</div>
+					<div class="cta-bottle cta-bottle--sesame">
+						<img src="assets/product/Sesame%20Oil.png" alt="" />
+					</div>
+				</div>
+			</div>
+		</section>
+
+	</main>
+
+	<!-- ================= FOOTER ================= -->
+	<footer class="site-footer" id="footer">
+		<div class="container footer-grid">
+			<div class="footer-brand">
+				<a href="#top" class="brand brand--footer">
+					<span class="brand-mark brand-mark--footer" aria-hidden="true"></span>
+					<span class="brand-word">ALAKH <span>NIRANJAN</span></span>
+				</a>
+				<p class="footer-subname">Jay Gurudev Agro</p>
+				<p>Blessed goodness, from our fields to your home.</p>
+			</div>
+
+			<div class="footer-col">
+				<h3>Shop</h3>
+				<ul>
+					<li><a href="#shop">Groundnut Oil</a></li>
+					<li><a href="#shop">Mustard Oil</a></li>
+					<li><a href="#shop">Sesame Oil</a></li>
+					<li><a href="#shop">Sunflower Oil</a></li>
+					<li><a href="#shop">Combo Packs</a></li>
+				</ul>
+			</div>
+
+			<div class="footer-col">
+				<h3>About</h3>
+				<ul>
+					<li><a href="#story">Our Story</a></li>
+					<li><a href="#story">Our Process</a></li>
+					<li><a href="#why">Why Alakh Niranjan</a></li>
+				</ul>
+			</div>
+
+			<div class="footer-col">
+				<h3>Help</h3>
+				<ul>
+					<li><a href="#footer">Contact</a></li>
+					<li><a href="#footer">Shipping</a></li>
+					<li><a href="#footer">Returns</a></li>
+					<li><a href="#footer">FAQs</a></li>
+				</ul>
+			</div>
+
+			<div class="footer-col">
+				<h3>Social</h3>
+				<ul>
+					<li><a href="#footer">Instagram</a></li>
+					<li><a href="#footer">Facebook</a></li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="container footer-bottom">
+			<p>© 2026 Jay Gurudev Agro</p>
+			<div class="footer-legal">
+				<a href="#footer">Privacy Policy</a>
+				<a href="#footer">Terms &amp; Conditions</a>
+			</div>
+		</div>
+	</footer>
+
+	<script>
+		(function () {
+			"use strict";
+
+			var menuToggle = document.getElementById("menuToggle");
+			var menuClose = document.getElementById("menuClose");
+			var mobileMenu = document.getElementById("mobileMenu");
+
+			function openMenu() {
+				mobileMenu.hidden = false;
+				menuToggle.setAttribute("aria-expanded", "true");
+				menuToggle.classList.add("is-open");
+				document.body.classList.add("menu-open");
+				if (menuClose) {
+					menuClose.focus();
+				}
+			}
+
+			function closeMenu() {
+				mobileMenu.hidden = true;
+				menuToggle.setAttribute("aria-expanded", "false");
+				menuToggle.classList.remove("is-open");
+				document.body.classList.remove("menu-open");
+				menuToggle.focus();
+			}
+
+			if (menuToggle && mobileMenu) {
+				menuToggle.addEventListener("click", function () {
+					if (mobileMenu.hidden) {
+						openMenu();
+					} else {
+						closeMenu();
+					}
+				});
+
+				if (menuClose) {
+					menuClose.addEventListener("click", closeMenu);
+				}
+
+				mobileMenu.addEventListener("click", function (event) {
+					if (event.target.tagName === "A") {
+						closeMenu();
+					}
+				});
+
+				document.addEventListener("keydown", function (event) {
+					if (event.key === "Escape" && !mobileMenu.hidden) {
+						closeMenu();
+					}
+				});
+			}
+
+			// ================= HERO PRODUCT SHOWCASE (carousel) =================
+			var showcase = document.getElementById("heroShowcase");
+
+			if (showcase) {
+				var STAR_PATH = "M12 2.5l2.9 6.2 6.8.7-5.1 4.6 1.5 6.7L12 17.6l-6.1 3.1 1.5-6.7-5.1-4.6 6.8-.7L12 2.5z";
+
+				var PRODUCTS = [
+					{ name: "Groundnut Oil", desc: "Cold Pressed Groundnut Oil", size: "500 ml / 1 Litre", price: "₹499", rating: 4.5, reviews: 128 },
+					{ name: "Mustard Oil", desc: "Cold Pressed Mustard Oil", size: "500 ml / 1 Litre", price: "₹449", rating: 5, reviews: 204 },
+					{ name: "Sesame Oil", desc: "Cold Pressed Sesame Oil", size: "500 ml / 1 Litre", price: "₹529", rating: 4.5, reviews: 96 }
+				];
+
+				var bottles = Array.prototype.slice.call(showcase.querySelectorAll(".showcase-bottle"));
+				var tabs = Array.prototype.slice.call(showcase.querySelectorAll(".showcase-tab"));
+				var prevBtn = document.getElementById("showcasePrev");
+				var nextBtn = document.getElementById("showcaseNext");
+				var infoPanel = document.getElementById("showcaseInfo");
+				var nameEl = document.getElementById("showcaseName");
+				var descEl = document.getElementById("showcaseDesc");
+				var sizeEl = document.getElementById("showcaseSize");
+				var priceEl = document.getElementById("showcasePrice");
+				var ratingEl = document.getElementById("showcaseRating");
+
+				var activeIndex = 0;
+
+				function buildStars(rating) {
+					ratingEl.innerHTML = "";
+					var full = Math.floor(rating);
+					var half = rating - full >= 0.5;
+
+					for (var i = 0; i < 5; i++) {
+						var svgNS = "http://www.w3.org/2000/svg";
+						var star = document.createElementNS(svgNS, "svg");
+						star.setAttribute("viewBox", "0 0 24 24");
+						star.setAttribute("aria-hidden", "true");
+
+						var cls = "star-svg";
+						if (i >= full && !(i === full && half)) {
+							cls += " star-svg--muted";
+						} else if (i === full && half) {
+							cls += " star-svg--half";
+						}
+						star.setAttribute("class", cls);
+
+						var path = document.createElementNS(svgNS, "path");
+						path.setAttribute("d", STAR_PATH);
+						star.appendChild(path);
+						ratingEl.appendChild(star);
+					}
+				}
+
+				function renderShowcase(index) {
+					activeIndex = (index + bottles.length) % bottles.length;
+
+					bottles.forEach(function (bottle) {
+						var bottleIndex = parseInt(bottle.getAttribute("data-index"), 10);
+						var relative = (bottleIndex - activeIndex + bottles.length) % bottles.length;
+						var pos = relative === 0 ? "active" : relative === 1 ? "right" : "left";
+						bottle.setAttribute("data-pos", pos);
+					});
+
+					tabs.forEach(function (tab) {
+						var isActive = parseInt(tab.getAttribute("data-goto"), 10) === activeIndex;
+						tab.classList.toggle("is-active", isActive);
+						tab.setAttribute("aria-selected", isActive ? "true" : "false");
+					});
+
+					var product = PRODUCTS[activeIndex];
+
+					infoPanel.classList.add("is-updating");
+					window.setTimeout(function () {
+						nameEl.textContent = product.name;
+						descEl.textContent = product.desc;
+						sizeEl.textContent = product.size;
+						priceEl.textContent = product.price;
+						ratingEl.setAttribute("aria-label", "Rated " + product.rating + " out of 5, " + product.reviews + " reviews");
+						buildStars(product.rating);
+						infoPanel.classList.remove("is-updating");
+					}, 150);
+				}
+
+				var AUTOPLAY_DELAY = 4500;
+				var prefersReducedMotion = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+				var autoplayTimer = null;
+
+				function stopAutoplay() {
+					if (autoplayTimer) {
+						window.clearInterval(autoplayTimer);
+						autoplayTimer = null;
+					}
+				}
+
+				function startAutoplay() {
+					if (prefersReducedMotion) {
+						return;
+					}
+					stopAutoplay();
+					autoplayTimer = window.setInterval(function () {
+						renderShowcase(activeIndex + 1);
+					}, AUTOPLAY_DELAY);
+				}
+
+				function restartAutoplay() {
+					startAutoplay();
+				}
+
+				if (prevBtn) {
+					prevBtn.addEventListener("click", function () {
+						renderShowcase(activeIndex - 1);
+						restartAutoplay();
+					});
+				}
+
+				if (nextBtn) {
+					nextBtn.addEventListener("click", function () {
+						renderShowcase(activeIndex + 1);
+						restartAutoplay();
+					});
+				}
+
+				tabs.forEach(function (tab) {
+					tab.addEventListener("click", function () {
+						renderShowcase(parseInt(tab.getAttribute("data-goto"), 10));
+						restartAutoplay();
+					});
+				});
+
+				showcase.addEventListener("mouseenter", stopAutoplay);
+				showcase.addEventListener("mouseleave", startAutoplay);
+				showcase.addEventListener("focusin", stopAutoplay);
+				showcase.addEventListener("focusout", startAutoplay);
+
+				document.addEventListener("visibilitychange", function () {
+					if (document.hidden) {
+						stopAutoplay();
+					} else {
+						startAutoplay();
+					}
+				});
+
+				renderShowcase(0);
+				startAutoplay();
+			}
+
+			// ================= PRODUCT CARD IMAGE GALLERIES =================
+			document.querySelectorAll("[data-gallery]").forEach(function (gallery) {
+				var slides = Array.prototype.slice.call(gallery.querySelectorAll(".gallery-slide"));
+				var dots = Array.prototype.slice.call(gallery.querySelectorAll(".gallery-dot"));
+				var prev = gallery.querySelector(".gallery-arrow--prev");
+				var next = gallery.querySelector(".gallery-arrow--next");
+				var active = 0;
+
+				function renderGallery(index) {
+					active = (index + slides.length) % slides.length;
+					slides.forEach(function (slide, i) {
+						slide.classList.toggle("is-active", i === active);
+					});
+					dots.forEach(function (dot, i) {
+						dot.classList.toggle("is-active", i === active);
+					});
+				}
+
+				if (prev) {
+					prev.addEventListener("click", function (event) {
+						event.preventDefault();
+						renderGallery(active - 1);
+					});
+				}
+
+				if (next) {
+					next.addEventListener("click", function (event) {
+						event.preventDefault();
+						renderGallery(active + 1);
+					});
+				}
+
+				dots.forEach(function (dot, i) {
+					dot.addEventListener("click", function (event) {
+						event.preventDefault();
+						renderGallery(i);
+					});
+				});
+			});
+
+			// Visual-only cart interaction (no real cart, no backend)
+			var cartCount = document.getElementById("cartCount");
+			var cartButton = document.getElementById("cartButton");
+			var count = 0;
+
+			document.querySelectorAll(".add-to-cart").forEach(function (button) {
+				button.addEventListener("click", function () {
+					count += 1;
+					cartCount.textContent = String(count);
+
+					if (cartButton) {
+						cartButton.classList.remove("bump");
+						void cartButton.offsetWidth;
+						cartButton.classList.add("bump");
+					}
+				});
+			});
+		})();
+	</script>
+
+</body>
+</html>
